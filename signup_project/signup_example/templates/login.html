@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirma Fix | Login & Registration</title>
+    <title>sign up test | Login & Registration</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -72,15 +72,6 @@
         .logo-icon .house {
             font-size: 30px;
             color: #2a5c7d;
-        }
-        
-        .logo-icon .faucet {
-            position: absolute;
-            bottom: -5px;
-            right: -5px;
-            font-size: 20px;
-            color: #2a5c7d;
-            transform: rotate(45deg);
         }
         
         .logo h1 {
@@ -405,7 +396,7 @@
             <div class="logo">
                 <div class="logo-icon">
                     <i class="fas fa-house house"></i>
-                    <i class="fas fa-faucet faucet"></i>
+                    
                 </div>
                 <h1>Example <span>Test</span></h1>
             </div>
@@ -644,7 +635,7 @@ document.getElementById('register-form').addEventListener('submit', function(e) 
         return;
     }
     
-    // ارسال به بک‌اند ثبت‌نام
+    
     const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
 
     fetch('/accounts/register/', {
